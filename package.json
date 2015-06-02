@@ -1,0 +1,30 @@
+{
+  "name": "simple-di-container",
+  "version": "0.0.1",
+  "description": "Simple Dependency Injection Container",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vklap/simple-di-container.git"
+  },
+  "keywords": [
+    "dependency",
+    "injection",
+    "inversion",
+    "of",
+    "control",
+    "service",
+    "locator",
+    "di",
+    "ioc"
+  ],
+  "author": "Victor Klapholz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vklap/simple-di-container/issues"
+  },
+  "homepage": "https://github.com/vklap/simple-di-container"
+}
