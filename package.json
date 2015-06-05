@@ -26,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/vklap/simple-di-container/issues"
   },
-  "homepage": "https://github.com/vklap/simple-di-container"
+  "homepage": "https://github.com/vklap/simple-di-container",
+  "dependencies": {
+    "args-list": "^0.3.3"
+  },
+  "devDependencies": {
+    "expect": "^1.6.0",
+    "mocha": "^2.2.5"
+  }
 }
