@@ -29,9 +29,10 @@ describe("dependencyLeaf", function() {
 
     var visitLeafSpy = expect.spyOn(visitor, 'visitLeaf');
 
-    component.accept(visitor);
+    var result = component.accept(visitor);
 
     expect(visitLeafSpy).toHaveBeenCalledWith(component);
+    expect(result).toEqual(component);
   });
 
 });

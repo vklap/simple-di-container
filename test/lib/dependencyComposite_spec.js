@@ -73,11 +73,12 @@ describe("dependencyComposite", function() {
     var visitCompositeSpy = expect.spyOn(visitor, 'visitComposite');
     var acceptSpy = expect.spyOn(anotherComponent, 'accept');
 
-    component.accept(visitor);
+    var result = component.accept(visitor);
 
     expect(raiseIfCompositeHasAlreadyBeenVisitedSpy).toHaveBeenCalledWith(component);
     expect(acceptSpy).toHaveBeenCalledWith(visitor);
     expect(visitCompositeSpy).toHaveBeenCalledWith(component);
+    expect(result).toEqual(component);
   });
 
 });
