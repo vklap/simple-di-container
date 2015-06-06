@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97255989-7de0-4dd5-8f8c-968117f06c65" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/dependencyComponent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/dependencyComposite_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/dependencyLeaf_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/resolveAndFillDependenciesVisitor_spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dependencyComposite.js" afterPath="$PROJECT_DIR$/lib/dependencyComposite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/lib/dependencyComposite_spec.js" afterPath="$PROJECT_DIR$/test/lib/dependencyComposite_spec.js" />
     </list>
     <ignored path="simple-di-container.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,14 +26,14 @@
     <favorites_list name="simple-di-container" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5537757">
+    <splitter split-orientation="vertical" split-proportion="0.39491916">
       <split-first>
         <leaf>
-          <file leaf-file-name="diContainer_spec.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/lib/diContainer_spec.js">
+          <file leaf-file-name="dependencyComposite.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/dependencyComposite.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="590" max-vertical-offset="1800">
-                  <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.21301775" vertical-offset="810" max-vertical-offset="1152">
+                  <caret line="49" column="33" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#41#0" expanded="false" />
                   </folding>
@@ -44,60 +41,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="resolveAndFillDependenciesVisitor_spec.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/lib/resolveAndFillDependenciesVisitor_spec.js">
+          <file leaf-file-name="dependencyLeaf.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/dependencyLeaf.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6086956" vertical-offset="896" max-vertical-offset="1188">
-                  <caret line="58" column="75" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="540">
+                  <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#41#0" expanded="false" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dependencyComponent.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/dependencyComponent.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
-                  <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#!!doc;n#DependencyComponent#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="resolveAndFillDependenciesVisitor.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/resolveAndFillDependenciesVisitor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="684">
-                  <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-                  <folding>
-                    <element signature="n#!!doc;n#ResolveAndFillDependenciesVisitor#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="depC.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/fixtures/depC.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="diContainer.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/diContainer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1729" max-vertical-offset="2394">
-                  <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -106,13 +57,13 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="resolveAndFillDependenciesVisitor.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/resolveAndFillDependenciesVisitor.js">
+          <file leaf-file-name="dependencyComposite_spec.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/lib/dependencyComposite_spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6148148" vertical-offset="439" max-vertical-offset="684">
-                  <caret line="31" column="52" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="52" />
+                <state vertical-scroll-proportion="0.859375" vertical-offset="932" max-vertical-offset="1548">
+                  <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
                   <folding>
-                    <element signature="n#!!doc;n#ResolveAndFillDependenciesVisitor#0" expanded="false" />
+                    <element signature="e#0#41#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -143,13 +94,13 @@
         <option value="$PROJECT_DIR$/test/fixtures/depD.js" />
         <option value="$PROJECT_DIR$/test/fixtures/depE.js" />
         <option value="$PROJECT_DIR$/lib/resolveAndFillDependenciesVisitor.js" />
-        <option value="$PROJECT_DIR$/lib/dependencyComposite.js" />
         <option value="$PROJECT_DIR$/test/fixtures/depF.js" />
         <option value="$PROJECT_DIR$/test/lib/diContainer_spec.js" />
-        <option value="$PROJECT_DIR$/test/lib/dependencyComposite_spec.js" />
         <option value="$PROJECT_DIR$/test/lib/dependencyLeaf_spec.js" />
         <option value="$PROJECT_DIR$/test/lib/dependencyComponent.js" />
         <option value="$PROJECT_DIR$/test/lib/resolveAndFillDependenciesVisitor_spec.js" />
+        <option value="$PROJECT_DIR$/lib/dependencyComposite.js" />
+        <option value="$PROJECT_DIR$/test/lib/dependencyComposite_spec.js" />
       </list>
     </option>
   </component>
@@ -397,13 +348,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3767228" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23430322" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.050833996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19777602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28024504" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33690658" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -438,20 +389,27 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test/lib/resolveAndFillDependenciesVisitor_spec.js</url>
-          <line>49</line>
-          <option name="timeStamp" value="37" />
+          <url>file://$PROJECT_DIR$/test/lib/dependencyComposite_spec.js</url>
+          <line>53</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/dependencyComposite.js</url>
+          <line>44</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="38" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="mocha-javascript-test-runner">
         <watch expression="diContainer" language="JavaScript" />
         <watch expression="component.getName()" language="JavaScript" />
+        <watch expression="dependencyComponent.getName()" language="JavaScript" />
+        <watch expression="dependency.getName()" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
@@ -627,38 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dependencyLeaf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96860987" vertical-offset="0" max-vertical-offset="540">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dependencyComposite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5404157" vertical-offset="90" max-vertical-offset="1152">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/depF.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16143498" vertical-offset="0" max-vertical-offset="446">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/lib/dependencyComposite_spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -729,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/resolveAndFillDependenciesVisitor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="684">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="684">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc;n#ResolveAndFillDependenciesVisitor#0" expanded="false" />
           </folding>
@@ -739,8 +669,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/lib/resolveAndFillDependenciesVisitor_spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6086956" vertical-offset="896" max-vertical-offset="1188">
-          <caret line="58" column="75" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.2857143" vertical-offset="792" max-vertical-offset="1188">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dependencyLeaf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="540">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dependencyComposite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21301775" vertical-offset="810" max-vertical-offset="1152">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lib/dependencyComposite_spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.859375" vertical-offset="932" max-vertical-offset="1548">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
