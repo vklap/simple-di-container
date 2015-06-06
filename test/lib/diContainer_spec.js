@@ -7,20 +7,40 @@ var diContainer = require('../../lib/diContainer');
 
 var depA = require('../fixtures/depA');
 var depB = require('../fixtures/depB');
+var depC = require('../fixtures/depC');
+var depD = require('../fixtures/depD');
+var depE = require('../fixtures/depE');
+var depF = require('../fixtures/depF');
+
 
 describe("diContainer", function() {
-  //function depA() {
-  //  return this;
-  //};
-  //
-  //function depB(depA, val1) {
-  //  this.depA = depA;
-  //  this.val1 = val1;
-  //  return this;
-  //};
-
   beforeEach(function() {
     diContainer.clear();
+  });
+
+  describe("Self Dependency", function(){
+    beforeEach(function() {
+      diContainer.register("depF", depF);
+    });
+
+    it("verify should throw", function() {
+      expect(function() {
+        diContainer.verify();
+      }).toThrow(/Failed to resolve 'depF': it cannot depend on itself/);
+    });
+  });
+
+  describe("Circular Dependencies", function(){
+    beforeEach(function() {
+      diContainer.register("depD", depD);
+      diContainer.register("depE", depE);
+    });
+
+    it("verify should throw", function() {
+      expect(function() {
+        diContainer.verify();
+      }).toThrow(/Failed to resolve 'depD': A circular dependency exists between 'depD' and 'depE'/);
+    });
   });
 
   describe('Valid dependencies', function() {
@@ -28,6 +48,8 @@ describe("diContainer", function() {
     beforeEach(function() {
       diContainer.register("depA", depA);
       diContainer.register("depB", depB);
+      diContainer.register("depC", depC);
+      diContainer.register("strVal", "some value");
       diContainer.register("val1", 1);
     });
 
@@ -59,6 +81,17 @@ describe("diContainer", function() {
       var result = diContainer.get("depB");
 
       expect(result.name).toEqual("depB");
+    });
+
+    it('should return depC', function() {
+      diContainer.verify();
+
+      var result = diContainer.get("depC");
+
+      expect(result.name).toEqual("depC");
+      expect(result.strVal).toEqual("some value");
+      expect(result.depA.name).toEqual("depA");
+      expect(result.depB.name).toEqual("depB");
     });
   });
 });
