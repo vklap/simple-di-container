@@ -1,6 +1,6 @@
 {
   "name": "simple-di-container",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple Dependency Injection Container",
   "main": "index.js",
   "scripts": {
