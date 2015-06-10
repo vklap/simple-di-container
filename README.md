@@ -9,6 +9,11 @@ $ npm install simple-di-container
 ```
 
 # Usage
+Below is an example that shows and explains how Simple Dependency Injection Container should be used.
+
+Please note the 'register' and 'registerSingle' methods - which allows you to support both singleton and new instances:
+* registerSingle: creates a single instance of the module for the whole lifetime of your application
+* register: creates and returns a new instance of the module for each call to the 'get' method
 
 ### Given the following 3 modules:
 
@@ -52,11 +57,36 @@ module.exports = function(depA, depB, strVal) {
 ### When you register your dependencies:
 
 ```javascript
+// Get a reference to the DI Container:
 var diContainer = require('./lib/diContainer');
+
+// Get your dependencies:
 var depA = require('./depA');
 var depB = require('./depB');
 var depC = require('./depC');
 
+// Register your dependencies:
 
+// Use 'registerSingle' for singleton dependencies:
+diContainer.registerSingle("depA", depA);
 
+// Use 'register' to get a new instance of your dependencies:
+diContainer.register("depB", depB);
+
+diContainer.registerSingle("depC", depC);
+diContainer.register("strVal", "some value");
+diContainer.registerSingle("val1", 1);
+
+// After registering all your dependencies, call the 'verify' method.
+// 'verify' throws an exception for circular dependencies or for missing dependencies
+diContainer.verify();
 ```
+
+### Then you should easily be able to get the desired instance:
+```javascript
+var depC = diContainer.get("depC");
+var strVal = diContainer.get("strVal");
+```
+
+*et voilà* - it's really that simple and easy!
+
