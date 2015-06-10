@@ -1,25 +1,62 @@
 # simple-di-container
 Simple Dependency Injection Container for Node.js
 
-### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:
+Simple DI Container is an easy-to-use Dependency Injection container for Node.js inspired by [SimpleInjector](https://simpleinjector.org/index.html)
 
+# Installation
 ```
-$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+$ npm install simple-di-container
 ```
 
-If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
+# Usage
 
-### Designer Templates
-We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.
+### Given the following 3 modules:
 
-### Rather Drive Stick?
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
+```javascript
+module.exports = function() {
+  var obj = {};
+  obj.name = "depA";
+  return obj;
+};
+```
 
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+```javascript
+module.exports = function() {
+  var obj = {};
+  obj.name = "depA";
+  return obj;
+};
+```
 
-### Support or Contact
-Having trouble with Pages? Check out the documentation at https://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
+```javascript
+module.exports = function(depA, val1) {
+  var obj = {};
+  obj.depA = depA;
+  obj.val1 = val1;
+  obj.name = "depB";
+  return obj;
+};
+```
+
+```javascript
+module.exports = function(depA, depB, strVal) {
+  var obj = {};
+  obj.depA = depA;
+  obj.depB = depB;
+  obj.strVal = strVal;
+  obj.name = "depC";
+  return obj;
+};
+```
+
+### When you register your dependencies:
+
+```javascript
+var diContainer = require('./lib/diContainer');
+var depA = require('./depA');
+var depB = require('./depB');
+var depC = require('./depC');
+
+
+
+```
