@@ -84,9 +84,16 @@ diContainer.verify();
 
 ### Then you should easily be able to get the desired instance:
 ```javascript
+
+// Gets singleton instance for depA
+var depA = diContainer.get("depA");
+// Gets new instance of depB, for each call to diContainer.get("depB")
+var depB = diContainer.get("depB");
 var depC = diContainer.get("depC");
 var strVal = diContainer.get("strVal");
+var val1 = diContainer.get("val1");
 ```
 
-*et voilà* - it's really that simple and easy!
+*et voilà* - :tada:
+It's really that simple... and easy!
 
