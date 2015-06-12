@@ -58,7 +58,7 @@ module.exports = function(depA, depB, strVal) {
 
 ```javascript
 // Get a reference to the DI Container:
-var diContainer = require('./lib/diContainer');
+var diContainer = require('simple-di-container').diContainer;
 
 // Get your dependencies:
 var depA = require('./depA');
@@ -94,6 +94,5 @@ var strVal = diContainer.get("strVal");
 var val1 = diContainer.get("val1");
 ```
 
-*et voilà* - :tada:
-It's really that simple... and easy!
+*et voilà* - it's really that simple... and easy!
 
